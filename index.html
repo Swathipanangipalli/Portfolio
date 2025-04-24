@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="https://kit.fontawesome.com/c757cba3b3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images2/logo.png" alt="Logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#Highlights">Highlights</a></li>
+                    <li><a href="#simulations">Professional Simulations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+            <div class="header-text">
+                <p>Welcome to my Portfolio</p>
+                <h1>Hello, I'm <span>Kusuma Swathi </span><br>Panangipalli</h1>
+            </div>
+    </div>
+<!-----------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                 <img src="images2/img2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a BCA student on an exciting journey through computer science and programming. I have a strong passion for creating useful and innovative solutions, and I'm always eager to learn new technologies.As I work through my degree, I'm not just hitting the books but also getting my hands dirty with real-world projects. This approach helps me to not only understand the theory but also apply my knowledge in real-world scenarios</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML & CSS</span></li>
+                            <li><span>Python</span><br>basics</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA</span><br>Aditya Degree & PG College <br> 2022-2025</li>
+                            <li><span>MPC [BIEAP]</span><br>Sri Chaitanya Jr College <br> 2020-2022</li>
+                            <li><span>SSC [BSEAP]</span><br>BVK High School <br> 2019-2020</li>
+                        </ul>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+<!-----------------certificates------------------>
+<div id="certificates">
+    <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="certificates-list">
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Generative AI</h2>
+                <p>LinkedIn | Microsoft</p>
+                <a href="images2/Certificate1.pdf">Click here</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Responsive Web Development</h2>
+                <p>Infosys | Springboard</p>
+                <a href="images2/Certificate2.pdf">Click here</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Essentials of Microsoft Power BI</h2>
+                <p>DigiSaksham | Microsoft</p>
+                <a href="images2/Certificate3.pdf">Click here</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-----------------Highlights------------------>
+<div id="Highlights">
+    <div class="container">
+        <h1 class="sub-title">My Highlights</h1>
+        <div class="highlights-list">
+            <div class="highlights">
+                <img src="images2/img3.jpg" alt="Project 1">
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                    <p>An e-commerce platform for Pet Essentials using HTML, CSS, JS, PHP, SQL</p>
+                    <a href="http://e-commerce-website.free.nf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="highlights">
+                <img src="images2/img5.jpg" alt="Project 1">
+                <div class="layer">
+                    <h3>Weather Application</h3>
+                    <p>A Weather website that provides real-time weather updates using HTML, CSS, JS, API</p>
+                    <a href="https://swathipanangipalli.github.io/Weather_Application/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="highlights">
+                <img src="images2/img4.jpg" alt="Project 1">
+                <div class="layer">
+                    <h3>To-Do List Application</h3>
+                    <p>A responsive task management application using HTML, CSS, JS</p>
+                    <a href="https://swathipanangipalli.github.io/ToDo_Application/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------certificates------------------>
+<div id="simulations">
+    <div class="container">
+        <h1 class="sub-title">Professional Simulations</h1>
+        <div class="certificates-list">
+            <div>
+                <i class="fa-solid fa-certificate"></i>
+                <h2>Advanced Software Engineering Job Simulation</h2>
+                <p>Walmart Global Tech | Forage</p>
+                <p>Completed the Advanced Software Engineering Job Simulation by Walmart Global Tech through Forage, gaining insight into real-world engineering practices.
+                    The program offered a hands-on overview of tasks related to software projects in a professional setting.</p>
+                <a href="images2/Walmart_certificate.pdf">Click here</a>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-----------------Contact------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> swathipanangipalli12@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/swathi-panangipalli/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:swathipanangipalli123456@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://x.com/Swathi___15"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+                <a href="images2/Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> &copy; 2025 Kusuma Swathi Panangipalli. All rights reserved. </p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz--H8nwdbphr0qJ37RQKh5xh6XMNFao-VRkb8L7A_neZHPIDsW4YRaqu_UygfL2sph/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => msg.innerHTML = "Message sent successfully!")
+        setTimeout(function() {
+            msg.innerHTML = "";
+        }, 5000); // Clear the message after 5 seconds
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  </body>
+</html>
