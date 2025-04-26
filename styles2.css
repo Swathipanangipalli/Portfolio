@@ -34,6 +34,7 @@ nav {
 
 .logo {
     width: 140px;
+    box-shadow: 0 0 10px #00bfff;
 }
 
 nav ul li {
@@ -85,6 +86,7 @@ nav ul li a:hover::after {
 
 .header-text h1 span{
     color: #00bfff;
+    text-shadow: 0 0 10px #00bfff;
 }
 
 /*-----------about------------*/
