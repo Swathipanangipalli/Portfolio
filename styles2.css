@@ -233,21 +233,28 @@ nav ul li a:hover::after {
     margin-top: 50px;
 }
 .highlights {
-    border-radius: 10px;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    background: #fff;
 }
+
 .highlights img {
     width: 100%;
-    border-radius: 10px;
+    height: 280px;
     display: block;
-    transition: transform 0.5s;
-    
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.4s ease;
 }
+
 .layer {
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #00bfff);
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        #202020
+    );
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -257,33 +264,34 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 40px;
+    padding: 0 20px;
     text-align: center;
-    font-size: 14px;
+    transition: height 0.4s ease;
+    box-sizing: border-box;
+    color: #fff;
+}
 
-}
 .layer h3 {
-    font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
 }
+
+.layer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
 .layer a {
-    margin-top: 20px;
-    color: #00bfff;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 60px;
-    background: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    text-align: center;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 24px;
 }
+
 .highlights:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
+
 .highlights:hover .layer {
     height: 100%;
-    transition: height 0.5s;
 }
 .btn {
     display: block;
